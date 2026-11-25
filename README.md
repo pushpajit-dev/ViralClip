@@ -29,7 +29,7 @@ Download the compressed 64-bit Windows installer from the [**Latest Release**](h
 ## Purchase & Activation
 
 - **Buy on Gumroad:** [Purchase ViralClip on Gumroad](https://pushpajit.gumroad.com/l/zabnjf)
-- **Aivory Portal & 1-Month Trial Keys:** [Open Aivory Portal](https://aivoryproducts.netlify.app)
+- **Aivory Portal & 1-Month Trial Keys:** [Open Aivory Portal](https://aivoryportal.vercel.app)
 
 ### How Activation Works
 - **Gumroad Buyers:** Enter the exact email used during Gumroad checkout and your Gumroad license key, then click **Activate**.
