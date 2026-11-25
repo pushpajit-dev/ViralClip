@@ -1,0 +1,7 @@
+*.exe
+*.zip
+*.log
+*.enc
+.env
+*.json
+__pycache__/
