@@ -8,21 +8,31 @@ Turn Twitch, YouTube, and local gameplay or podcast videos into vertical 9:16 Sh
 
 ---
 
-## Download (64-Bit Aivory Setup Wizard)
+## Download (64-Bit Aivory Setup Wizard & Portable)
 
-Download the compressed 64-bit Windows installer from the [**Latest Release**](https://github.com/pushpajit-dev/ViralClip/releases/latest):
+Download the latest Windows release from the [**Latest Release**](https://github.com/pushpajit-dev/ViralClip/releases/latest):
 
-- **`ViralClip-Setup-v1.4.0-x64.exe`** — Official Aivory 64-bit Setup Wizard (LZMA2 solid compressed)
+- **`ViralClip-Setup-v1.5.0-x64.exe`** — Official Aivory 64-bit Setup Wizard (LZMA2 solid compressed)
+- **`ViralClip-v1.5.0-Windows-Portable.zip`** — Standalone Windows 64-bit Portable bundle (extract and run `ViralClip.exe`)
 
-> **No manual Python or Node.js setup required.** The 64-bit installer includes all compiled Python runtime libraries, FFmpeg media tools, and GPU upscaling binaries — without bloating the installer with bulky AI models.
+> **No manual Python or Node.js setup required.** Both packages include all compiled Python runtime libraries, FFmpeg media tools, bundled Streamlink, and GPU upscaling binaries.
 
 ---
 
 ## Installation & First-Time Setup
 
-1. **Run `ViralClip-Setup-v1.4.0-x64.exe`** — Follow the Aivory 64-bit Setup Wizard to install ViralClip and all required libraries automatically.
+1. **Run `ViralClip-Setup-v1.5.0-x64.exe`** (or extract `ViralClip-v1.5.0-Windows-Portable.zip` and launch `ViralClip.exe`) — Follow the Aivory 64-bit Setup Wizard to install ViralClip and all required libraries automatically.
 2. **Download Required Models (First Launch)** — When you open ViralClip for the first time, the built-in **First-Time Model Setup** screen downloads the required Faster-Whisper speech model with a live progress bar and percentage (`0% -> 100%`) and auto-detects Antigravity AI (or local Ollama).
 3. **Activate Your License** — Once model setup completes, enter your **Email** and **License Code** and click **Activate** to unlock ViralClip Studio.
+
+---
+
+## What's New in v1.5.0
+
+- **Start Live Stream + Native Bundled Streamlink** — Streamlink is now compiled directly inside `ViralClip.exe` (`--internal-streamlink`), fixing portable path lookup and live polling serialization so Twitch/YouTube streams start immediately without stalling.
+- **Improved Twitch & YouTube URL Handling** — Automatically strips tracking query params (`?referrer=raid`, `?si=...`) and falls back cleanly from offline channels to the latest archived VOD.
+- **Guaranteed Best-Moments Clip Count** — Requesting 10–15 clips consistently delivers the exact requested count with multimodal audio, chat, webcam YuNet reaction, Faster-Whisper, and Ollama scoring.
+- **OpenCV Corner PiP Webcam Framing & Templates** — Improved stationary webcam corner clustering, balanced zoom clamping, and full-width uncluttered studio controls.
 
 ---
 
